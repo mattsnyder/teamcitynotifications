@@ -1,0 +1,18 @@
+Ok, this is my first AppleScript so do not expect any AS fanciness.
+
+To get this script going, 
+
++ pull it down into your Applications folder
++ edit the_builds array to include record objects for the projects you want to watch
+++ The get the id's, open the build you wish to watch and copy the value for buildTypeId on the querystring
++ edit the url in the CURL call to reflect your TeamCity's url
++ run the applescript
++ configure the application in growl to your liking
+
+
+To Do ...
++ externalize the configuration
++ clicking growl notification links to teamcity
++ notify when somebody takes responsibility for failed build
++ renotification of failed build if not handled within x amount of time
++ show a building notification
